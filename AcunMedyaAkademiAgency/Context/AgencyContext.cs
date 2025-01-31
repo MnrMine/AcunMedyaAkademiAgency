@@ -16,6 +16,8 @@ namespace AcunMedyaAkademiAgency.Context
         public DbSet<ProjectDetail> ProjectDetails { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<Team> Teams { get; set; }
+        public DbSet<Message> Messages { get; set; }
+        public DbSet<Notification> Notifications { get; set; }
 
 
     }
