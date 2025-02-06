@@ -129,9 +129,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\AgencyContext.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
+    <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProjectController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Entities\About.cs" />
+    <Compile Include="Entities\Admin.cs" />
+    <Compile Include="Entities\Branch.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Feature.cs" />
     <Compile Include="Entities\Message.cs" />
@@ -150,6 +154,22 @@
     <Compile Include="Migrations\202501311841345_mig1.cs" />
     <Compile Include="Migrations\202501311841345_mig1.Designer.cs">
       <DependentUpon>202501311841345_mig1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502061725531_mig_add.cs" />
+    <Compile Include="Migrations\202502061725531_mig_add.Designer.cs">
+      <DependentUpon>202502061725531_mig_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502061842434_mig_delete.cs" />
+    <Compile Include="Migrations\202502061842434_mig_delete.Designer.cs">
+      <DependentUpon>202502061842434_mig_delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502061919024_mig_birles.cs" />
+    <Compile Include="Migrations\202502061919024_mig_birles.Designer.cs">
+      <DependentUpon>202502061919024_mig_birles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502061930229_mig2.cs" />
+    <Compile Include="Migrations\202502061930229_mig2.Designer.cs">
+      <DependentUpon>202502061930229_mig2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -944,6 +964,12 @@
     <Content Include="Templates\Breeze-Free-Bootstrap-Admin-Template-1.0.0\template\partials\_navbar.html" />
     <Content Include="Templates\Breeze-Free-Bootstrap-Admin-Template-1.0.0\template\partials\_settings-panel.html" />
     <Content Include="Templates\Breeze-Free-Bootstrap-Admin-Template-1.0.0\template\partials\_sidebar.html" />
+    <Content Include="Templates\simple-404-template-master\404.html" />
+    <Content Include="Templates\simple-404-template-master\assets\css\style.css" />
+    <Content Include="Templates\simple-404-template-master\assets\images\404.svg" />
+    <Content Include="Templates\simple-404-template-master\favicon.png" />
+    <Content Include="Templates\simple-404-template-master\screenshot\dekstop-ss.png" />
+    <Content Include="Templates\simple-404-template-master\screenshot\mobile-browser.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -1128,6 +1154,10 @@
     <Content Include="Views\Service\ServiceList.cshtml" />
     <Content Include="Views\AdminLayout\NotificationPartial.cshtml" />
     <Content Include="Views\Service\CreateService.cshtml" />
+    <Content Include="Views\Service\UpdateService.cshtml" />
+    <Content Include="Templates\simple-404-template-master\LICENSE" />
+    <Content Include="Templates\simple-404-template-master\README.md" />
+    <Content Include="Views\ErrorPage\Page404.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1135,6 +1165,7 @@
     <Folder Include="Templates\agency\.git\objects\info\" />
     <Folder Include="Templates\agency\.git\objects\pack\" />
     <Folder Include="Templates\agency\.git\refs\tags\" />
+    <Folder Include="Views\Project\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -1169,6 +1200,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202501311841345_mig1.resx">
       <DependentUpon>202501311841345_mig1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502061725531_mig_add.resx">
+      <DependentUpon>202502061725531_mig_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502061842434_mig_delete.resx">
+      <DependentUpon>202502061842434_mig_delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502061919024_mig_birles.resx">
+      <DependentUpon>202502061919024_mig_birles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502061930229_mig2.resx">
+      <DependentUpon>202502061930229_mig2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

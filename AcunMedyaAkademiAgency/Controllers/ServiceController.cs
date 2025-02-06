@@ -29,5 +29,29 @@ namespace AcunMedyaAkademiAgency.Controllers
 
             return RedirectToAction("ServiceList");
         }
+        public ActionResult DeleteService(int id)
+        {
+            var value=context.Services.Find(id);
+            context.Services.Remove(value);
+            context.SaveChanges();
+            return RedirectToAction("ServiceList");
+        }
+        [HttpGet]
+        public ActionResult UpdateService(int id)
+        {
+            var value=context.Services.Find(id);
+            return View(value);
+        }
+        [HttpPost]
+        public ActionResult UpdateService(Service service)
+        {
+            var value = context.Services.Find(service.ServiceId);
+            value.Title= service.Title;
+            value.ImageUrl= service.ImageUrl;
+            value.Description= service.Description;
+            context.SaveChanges();
+
+            return RedirectToAction("ServiceList");
+        }
     }
 }
