@@ -18,7 +18,7 @@ namespace AcunMedyaAkademiAgency.Controllers
             List<Project> values;
             if(searchText !=null)
             {
-                values = context.Projects.Where(x => x.Title.Contains(searchText)).ToList();
+                values = context.Projects.Where(x=>x.Title.Contains(searchText)).ToList();
                 return View(values);
             }
 
