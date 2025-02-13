@@ -4,12 +4,13 @@
     Layout = "~/Views/AdminLayout/Index.cshtml";
     int count = 0;
 }
+
 <div class="col-lg-12 grid-margin stretch-card">
     <div class="card">
         <div class="card-body">
             <h4 class="card-title">Hizmetler Sayfası</h4>
             <p class="card-description">
-              Hizmetlerle ilgili işlemleri buradan yapabilirsiniz.</code>
+              Hizmetlerle ilgili işlemleri buradan yapabilirsiniz.
             </p>
             <div class="table-responsive">
                 <table class="table table-bordered">
@@ -52,30 +53,5 @@
 
 
 
-@*<h2>Hizmetler Listesi</h2>
 
-
-<br />
-<table class="table table-bordered">
-    <tr>
-        <th>#</th>
-        <th>Hizmet Adı</th>
-        <th>Hizmet Resim</th>
-        <th>Açıklaması</th>
-        <th>Sil</th>
-        <th>Güncelle</th>
-    </tr>
-    @foreach (var item in Model)
-    {
-        count++;
-        <tr>
-            <td>@count</td>
-            <td>@item.Title</td>
-            <td><img src="@item.ImageUrl" style="width:75px;height:75px;" alt="Hizmet Görseli" /></td>
-            <td>@item.Description</td>
-            <td><a class="btn btn-danger" href="/Service/DeleteService/@item.ServiceId"><i class="fa fa-trash"></i>Sil</a></td>
-            <td><a class="btn btn-success" href="/Service/UpdateService/@item.ServiceId"><i class="fa fa-pencil">Güncelle</i></a></td>
-        </tr>
-    }
-</table>
-<br />*@
+   

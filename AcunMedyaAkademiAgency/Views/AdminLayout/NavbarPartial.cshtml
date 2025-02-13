@@ -1,11 +1,12 @@
 ﻿<nav class="navbar col-lg-12 col-12 p-lg-0 fixed-top d-flex flex-row">
     <div class="navbar-menu-wrapper d-flex align-items-stretch justify-content-between">
-        <a class="navbar-brand brand-logo-mini align-self-center d-lg-none" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini align-self-center d-lg-none" href="index.html"><img src="/Templates/Breeze-Free-Bootstrap-Admin-Template-1.0.0/template/assets/images/logo-mini.svg" alt="logo" /></a>
         <button class="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize">
             <i class="mdi mdi-menu"></i>
         </button>
         <ul class="navbar-nav">
-            @Html.Action("NotificationPartial","AdminLayout")
+
+            @Html.Action("NotificationPartial", "AdminLayout")
             <li class="nav-item dropdown d-none d-sm-flex">
                 <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown">
                     <i class="mdi mdi-email-outline"></i>
@@ -37,18 +38,7 @@
                     <h6 class="p-3 mb-0">See all activity</h6>
                 </div>
             </li>
-            <li class="nav-item nav-search border-0 ml-1 ml-md-3 ml-lg-5 d-none d-md-flex">
-                <form class="nav-link form-inline mt-2 mt-md-0">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search" />
-                        <div class="input-group-append">
-                            <span class="input-group-text">
-                                <i class="mdi mdi-magnify"></i>
-                            </span>
-                        </div>
-                    </div>
-                </form>
-            </li>
+
         </ul>
         <ul class="navbar-nav navbar-nav-right ml-lg-auto">
             <li class="nav-item dropdown d-none d-xl-flex border-0">
@@ -65,7 +55,7 @@
             <li class="nav-item nav-profile dropdown border-0">
                 <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown">
                     <img class="nav-profile-img mr-2" alt="" src="assets/images/faces/face1.jpg" />
-                    <span class="profile-name">Henry Klein</span>
+                    <span class="profile-name">@ViewBag.profile</span>
                 </a>
                 <div class="dropdown-menu navbar-dropdown w-100" aria-labelledby="profileDropdown">
                     <a class="dropdown-item" href="#">
@@ -82,3 +72,24 @@
         </button>
     </div>
 </nav>
+          
+         
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+       

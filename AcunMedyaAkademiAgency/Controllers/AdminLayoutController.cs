@@ -15,6 +15,7 @@ namespace AcunMedyaAkademiAgency.Controllers
         {
             return View();
         }
+       
         public PartialViewResult HeadPartial()
         {
             return PartialView();
@@ -25,6 +26,10 @@ namespace AcunMedyaAkademiAgency.Controllers
         }
         public PartialViewResult NavbarPartial()
         {
+            var username = Session["username"];
+            var namesurname = context.Admins.Where(x => x.Username == username).Select
+                (x => x.Name + "" + x.SurName).FirstOrDefault();
+            ViewBag.profile = namesurname;
             return PartialView();
         }
         public PartialViewResult NotificationPartial()
