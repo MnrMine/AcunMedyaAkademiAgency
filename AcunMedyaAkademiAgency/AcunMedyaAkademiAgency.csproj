@@ -129,6 +129,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\AgencyContext.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
+    <Compile Include="Controllers\DashboardController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -175,6 +177,14 @@
     <Compile Include="Migrations\202502131814170_mig3.cs" />
     <Compile Include="Migrations\202502131814170_mig3.Designer.cs">
       <DependentUpon>202502131814170_mig3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502201840186_mig_4.cs" />
+    <Compile Include="Migrations\202502201840186_mig_4.Designer.cs">
+      <DependentUpon>202502201840186_mig_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502201902124_mig15.cs" />
+    <Compile Include="Migrations\202502201902124_mig15.Designer.cs">
+      <DependentUpon>202502201902124_mig15.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -1001,9 +1011,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Templates\Breeze-Free-Bootstrap-Admin-Template-1.0.0\CHANGELOG.md" />
     <Content Include="Templates\Breeze-Free-Bootstrap-Admin-Template-1.0.0\LICENSE" />
     <Content Include="Templates\Breeze-Free-Bootstrap-Admin-Template-1.0.0\README.md" />
@@ -1280,6 +1287,10 @@
     <Content Include="Templates\login-form-15\scss\bootstrap\_variables.scss" />
     <Content Include="Templates\login-form-15\scss\style.scss" />
     <Content Include="Views\Login\AdminLogin.cshtml" />
+    <Content Include="Views\Dashboard\Index.cshtml" />
+    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Default\ProjectPartial.cshtml" />
+    <Content Include="Views\Default\ModalPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1336,6 +1347,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202502131814170_mig3.resx">
       <DependentUpon>202502131814170_mig3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502201840186_mig_4.resx">
+      <DependentUpon>202502201840186_mig_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502201902124_mig15.resx">
+      <DependentUpon>202502201902124_mig15.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
