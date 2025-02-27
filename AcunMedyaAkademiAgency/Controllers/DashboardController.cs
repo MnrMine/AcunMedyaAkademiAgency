@@ -20,5 +20,10 @@ namespace AcunMedyaAkademiAgency.Controllers
             ViewBag.personelsayisi = context.Teams.ToList().Count();
             return View();
         }
+        public PartialViewResult StaffPartial()
+        {
+            var values=context.Teams.ToList();
+            return PartialView(values);
+        }
     }
 }

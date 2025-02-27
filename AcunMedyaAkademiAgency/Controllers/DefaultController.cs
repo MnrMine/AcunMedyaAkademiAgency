@@ -24,5 +24,16 @@ namespace AcunMedyaAkademiAgency.Controllers
             var values = context.ProjectDetails.ToList();
             return PartialView(values);
         }
+        public PartialViewResult TeamPartial()
+        {
+            var values = context.Teams.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult SocialMediaPartial()
+        {
+            var values = context.SocialMedias.ToList();
+            return PartialView(values);
+        }
+
     }
 }

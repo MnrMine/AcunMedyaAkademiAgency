@@ -146,6 +146,7 @@
     <Compile Include="Entities\Project.cs" />
     <Compile Include="Entities\ProjectDetail.cs" />
     <Compile Include="Entities\Service.cs" />
+    <Compile Include="Entities\SocialMedia.cs" />
     <Compile Include="Entities\Team.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -185,6 +186,18 @@
     <Compile Include="Migrations\202502201902124_mig15.cs" />
     <Compile Include="Migrations\202502201902124_mig15.Designer.cs">
       <DependentUpon>202502201902124_mig15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502271729061_mig_yap.cs" />
+    <Compile Include="Migrations\202502271729061_mig_yap.Designer.cs">
+      <DependentUpon>202502271729061_mig_yap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502271748591_mig_olsun.cs" />
+    <Compile Include="Migrations\202502271748591_mig_olsun.Designer.cs">
+      <DependentUpon>202502271748591_mig_olsun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202502271813468_mig_ekleme.cs" />
+    <Compile Include="Migrations\202502271813468_mig_ekleme.Designer.cs">
+      <DependentUpon>202502271813468_mig_ekleme.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -1291,6 +1304,9 @@
     <Content Include="Views\Default\Index.cshtml" />
     <Content Include="Views\Default\ProjectPartial.cshtml" />
     <Content Include="Views\Default\ModalPartial.cshtml" />
+    <Content Include="Views\Dashboard\StaffPartial.cshtml" />
+    <Content Include="Views\Default\TeamPartial.cshtml" />
+    <Content Include="Views\Default\SocialMediaPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -1353,6 +1369,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202502201902124_mig15.resx">
       <DependentUpon>202502201902124_mig15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502271729061_mig_yap.resx">
+      <DependentUpon>202502271729061_mig_yap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502271748591_mig_olsun.resx">
+      <DependentUpon>202502271748591_mig_olsun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202502271813468_mig_ekleme.resx">
+      <DependentUpon>202502271813468_mig_ekleme.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
